@@ -1,0 +1,13 @@
+{
+  "Id": "RemoveSwarmDamageResistance",
+  "DisplayName": "Remove Swarm Damage Resistance",
+  "Author": "Stanislav Raclavsky",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.9.0",
+  "Requirements": [],
+  "AssemblyName": "RemoveSwarmDamageResistance.dll",
+  "HomePage": "",
+  "LoadAfter": [],
+  "HarmonyBefore": [],
+  "EntryMethod": "RSDR.Main.Load"
+}
