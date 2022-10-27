@@ -28,6 +28,7 @@ namespace RSDR
             }
             return true;
         }
+
         [Harmony.HarmonyPatch(typeof(LibraryScriptableObject), "LoadDictionary")]
         [Harmony.HarmonyPatch(typeof(LibraryScriptableObject), "LoadDictionary", new Type[0])]
         static class LibraryScriptableObject_LoadDictionary_Patch
@@ -61,12 +62,5 @@ namespace RSDR
                 }
             }
         }
-
-        internal static Exception Error(String message)
-        {
-            logger?.Log(message);
-            return new InvalidOperationException(message);
-        }
-
     }
 }
